@@ -67,7 +67,7 @@ st.title("NASA Mars Rover's Photo Colorization")
 
 rover = st.selectbox(
     'Wich Rover?',
-    ('Curiosity', 'Opportunity', 'Spirit'))
+    ('Spirit', 'Opportunity', 'Curiosity'))
 
 cams = ['FHAZ', 'RHAZ', 'NAVCAM']
 if rover == 'Curiosity':

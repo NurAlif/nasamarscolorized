@@ -66,7 +66,7 @@ def url_retrieve1(url, outfile):
 st.title("NASA Mars Rover's Photo Colorization")
 
 rover = st.selectbox(
-    'Wich Rover?',
+    'Which Rover?',
     ('Spirit', 'Opportunity', 'Curiosity'))
 
 cams = ['FHAZ', 'RHAZ', 'NAVCAM']
@@ -80,7 +80,7 @@ else:
     cams.append('MINITES')
 
 camera = st.selectbox(
-    'Wich Camera?',
+    'Which Camera?',
     cams)
 sol = st.number_input('Sol (Days in Mars):', value=60)
 

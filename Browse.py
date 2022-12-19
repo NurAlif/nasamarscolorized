@@ -82,7 +82,7 @@ else:
 camera = st.selectbox(
     'Wich Camera?',
     cams)
-sol = st.number_input('Sol (Days in Mars):', value=100)
+sol = st.number_input('Sol (Days in Mars):', value=60)
 
 #
 

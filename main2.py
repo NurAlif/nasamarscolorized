@@ -17,7 +17,7 @@ from utils import build_backbone_unet, MainModel, device, Config, lab_to_rgb, sa
 def get_model():
     gen = build_backbone_unet(input_channels=1, output_channels=2, size=Config.image_size_2)
 
-    gen.load_state_dict(torch.load("res18-unet.pt", map_location=device))
+    gen.load_state_dict(torch.load("models/res18-unet.pt", map_location=device))
     return MainModel(generator=gen)
 
 model = get_model()

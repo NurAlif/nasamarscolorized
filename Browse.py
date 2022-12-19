@@ -12,6 +12,10 @@ from torchvision import transforms
 
 from utils import build_backbone_unet, MainModel, device, Config, lab_to_rgb, save_img_from_np, get_downloadable_img
 
+st.set_page_config(
+    page_title="NASA Mars Rover's Colorized | Nur Alif Ilyasa",
+    page_icon="🌍", 
+)
 
 @st.cache
 def get_model():
@@ -47,7 +51,7 @@ apikey = "uaTeTIp3KK6yKt94DbjwA4UbwN554oydFvJit2el"
 
 def download_image(url, full_path):
     urllib.request.urlretrieve(url, full_path)
-    print("FILE DOWNLOADED")
+    # print("FILE DOWNLOADED")
 
 def url_retrieve1(url, outfile):
     p = Path(outfile)
@@ -83,7 +87,7 @@ sol = st.number_input('Sol (Days in Mars):', value=100)
 #
 
 base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/"+str(rover).lower()+"/photos?sol="+str(sol)+"&camera="+str(camera).lower()+"&api_key="
-print(base_url)
+# print(base_url)
 cachefolder = "cache/"
 
 @st.cache
@@ -94,7 +98,7 @@ def fetch_data(url):
 obj = None
 with st.spinner('Fetching data from NASA...'):
     obj = fetch_data(base_url+apikey)
-    print(obj)
+    # print(obj)
 
 photos = obj["photos"]
 

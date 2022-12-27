@@ -1,0 +1,75 @@
+{
+    "rovers": [
+        {
+            "name": "Spirit",
+            "mass": "185 kg",
+            "power": "solar panel 140W",
+            "launched": "June 10, 2003",
+            "deployed": "January 4, 2004",
+            "location": "Gusev Impact Crater",
+            "rocket": "Delta II",
+            "traveled": "7.73 km",
+            "desc": "One of two rovers launched in 2003 to explore Mars and search for signs of past life, Spirit far outlasted her planned 90-day mission, lasting over six years. Among her myriad discoveries, Spirit found evidence that Mars was once much wetter than it is today and helped scientists better understand the Martian wind. <br><br> In May 2009, the rover became embedded in soft soil at a site called 'Troy' with only five working wheels to aid in the rescue effort. After months of testing and carefully planned maneuvers, NASA ended efforts to free the rover and eventually ended the mission on May 25, 2011."
+        },
+        {
+            "name": "Opportunity",
+            "mass": "185 kg",
+            "power": "solar panel 140 W",
+            "launched": "July 8, 2003",
+            "deployed": "January 25, 2004",
+            "location": "Eagle, Meridiani Planum",
+            "rocket": "Delta II",
+            "traveled": "45.16 km",
+            "desc": "Opportunity was the second of the two rovers launched in 2003 to land on Mars and begin traversing the Red Planet in search of signs of ancient water. The rover explored the Martian terrain for almost 15 years, far outlasting her planned 90-day mission. <br><br> After landing on Mars in 2004, Opportunity made a number of discoveries about the Red Planet including dramatic evidence that long ago at least one area of Mars stayed wet for an extended period and that conditions could have been suitable for sustaining microbial life."
+        },
+        {
+            "name": "Curiosity",
+            "mass": "899 kg",
+            "power": "[MMRTG](https://en.wikipedia.org/wiki/Multi-mission_radioisotope_thermoelectric_generator): ~100 W",
+            "launched": "November 26, 2011",
+            "deployed": "August 6, 2012",
+            "location": "Gale crater",
+            "rocket": "Atlas V",
+            "traveled": "28.15 km",
+            "desc": "Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars as part of NASA's Mars Science Laboratory (MSL) mission. Mission goals include an investigation of the Martian climate and geology, assessment of whether the selected field site inside Gale has ever offered environmental conditions favorable for microbial life (including investigation of the role of water), and planetary habitability studies in preparation for human exploration. In December 2012, Curiosity's two-year mission was extended indefinitely, and on August 5, 2017, NASA celebrated the fifth anniversary of the Curiosity rover landing. On August 6, 2022, a detailed overview of accomplishments by the Curiosity rover for the last ten years was reported. The rover is still operational, and has been active on Mars for 10 years"
+        }
+    ],
+    "cams": [
+        {
+            "name": "FHAZ",
+            "ext": "Front Hazard Avoidance Camera"
+        },
+        {
+            "name": "RHAZ",
+            "ext": "Rear Hazard Avoidance Camera"
+        },
+        {
+            "name": "MAST",
+            "ext": "Mast Camera"
+        },
+        {
+            "name": "CHEMCAM",
+            "ext": "Chemistry and Camera Complex"
+        },
+        {
+            "name": "MAHLI",
+            "ext": "Mars Hand Lens Imager"
+        },
+        {
+            "name": "MARDI",
+            "ext": "Mars Desent Imager"
+        },
+        {
+            "name": "NAVCAM",
+            "ext": "Navigation Camera"
+        },
+        {
+            "name": "PANCAM",
+            "ext": "Panoramic Camera"
+        },
+        {
+            "name": "MINITES",
+            "ext": "Miniature Thermal Emission Spectometer Camera"
+        }
+    ]
+}

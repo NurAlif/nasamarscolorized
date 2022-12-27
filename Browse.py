@@ -65,9 +65,16 @@ def url_retrieve1(url, outfile):
 
 st.title("NASA Mars Rover's Photo Colorization")
 
+options = json.load(open("options.json"))
+
 rover = st.selectbox(
     'Which Rover?',
     ('Spirit', 'Opportunity', 'Curiosity'))
+
+for r in options["rovers"]:
+    if str(rover) == r["name"]:
+        st.markdown(r["desc"], unsafe_allow_html=True)
+        break
 
 cams = ['FHAZ', 'RHAZ', 'NAVCAM']
 if rover == 'Curiosity':
@@ -82,6 +89,13 @@ else:
 camera = st.selectbox(
     'Which Camera?',
     cams)
+
+for c in options["cams"]:
+    if str(camera) == c["name"]:
+        st.markdown(c["ext"], unsafe_allow_html=True)
+        break
+
+
 sol = st.number_input('Sol (Days in Mars):', value=60)
 
 #
